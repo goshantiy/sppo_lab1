@@ -119,6 +119,6 @@ int main(int argc, char *argv[])
     printAverageCounts();
     printByOwner("owner11");
 
-
-    return a.exec();
+    //company1 qwe;
+    return 0;
 }

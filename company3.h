@@ -9,6 +9,10 @@ public:
     company3(QString name, QList<QString> &owners, double income, double area, int empNumber);
     double getTax() override;
     typeCompany getType() override;
+    ~company3()
+    {
+        qDebug()<<"~company3";
+    }
 };
 
 

@@ -2,6 +2,7 @@
 #define COMPANY_H
 #include <QString>
 #include <QList>
+#include <QDebug>
 class company
 {
 
@@ -25,6 +26,10 @@ public:
     int getNumber();
     virtual typeCompany getType()=0;
     virtual double getTax() = 0;
+    virtual ~company()
+    {
+        qDebug()<<"~company";
+    }
 protected:
     QString name_;
     QList<QString> owners_;
