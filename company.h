@@ -4,6 +4,7 @@
 #include <QList>
 class company
 {
+protected:
     enum typeCompany
     {
         type1,
@@ -24,7 +25,7 @@ public:
     int getNumber();
     virtual typeCompany getType()=0;
     virtual double getTax() = 0;
-private:
+protected:
     QString name_;
     QList<QString> owners_;
     double income_;

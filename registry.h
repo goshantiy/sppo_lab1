@@ -7,16 +7,15 @@ class registry
 {
 public:
     static registry& instance();
-    void addCompany();
-    void delCompany();
+    void addCompany(company* Companyz);
+    void delCompany(company* Companyz);
     int getSize();
-    company& getCompany(int ix);
-private:
+    company* getCompany(int ix);
+protected:
      registry();
      registry(const registry &obj) = delete;
      registry& operator=(const registry &obj) = delete;
-
-
+     QList<company*> companies_;
 };
 
 #endif // REGISTRY_H
