@@ -16,6 +16,7 @@ protected:
      registry(const registry &obj) = delete;
      registry& operator=(const registry &obj) = delete;
      QList<company*> companies_;
+     ~registry();
 };
 
 #endif // REGISTRY_H

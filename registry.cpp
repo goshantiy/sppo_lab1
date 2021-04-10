@@ -24,3 +24,8 @@ company* registry::getCompany(int ix)
 {
     return companies_[ix];
 }
+registry::~registry()
+{
+qDeleteAll(companies_);
+   companies_.clear();
+}
