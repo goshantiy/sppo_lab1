@@ -1,5 +1,5 @@
 #include "company3.h"
-
+company3::company3(){};
 company3::company3(QString name, QList<QString> &owners, double income,double area, int empNumber):company(name,owners,income,area,empNumber)
 {
 
