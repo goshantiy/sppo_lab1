@@ -4,14 +4,14 @@
 #include <QList>
 class company
 {
-protected:
+
+public:
     enum typeCompany
     {
         type1,
         type2,
         type3
     };
-public:
     company();
     company(QString name, QList<QString> &owners, double income,double area, int empNumber);
     void setName(QString name);
